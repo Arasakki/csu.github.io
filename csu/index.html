@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="1920">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reg_style.css">
     <title>CSU-REGISTER-FORM</title>
 </head>
 <body>
@@ -14,7 +14,12 @@
         <div class="block">
             <div class="block_auth_acc">
                 <h1 class="login--acc">Войти в аккаунт</h1>
-                <div class="auth_cards">
+                <form class="auth_cards">
+                    <div class="auth_card">
+                        <p class="auth--text--err--match">Your username and password didn't match. Please try again.</p>
+                        <p class="auth--text--err--nacc">Your account doesn't have access to this page. To proceed,
+                            please login with an account that has access.</p>
+                    </div>
                     <div class="auth_card">
                         <input type="name" class="input_login" placeholder="Login" id="login">
                     </div>
@@ -22,7 +27,7 @@
                         <input type="name" class="input_pass" placeholder="Password" id="password">
                     </div>
                     <button class="btn_acc" id="signin">Войти</button>
-                </div>
+                </form>
             </div>
             <div class="block_pic">
                 <div class="logo">
